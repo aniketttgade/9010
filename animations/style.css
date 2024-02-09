@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  font-family: Arial;
+  border: border-box;
+}
+
+.navbar {
+  background-color: aqua;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-home {
+margin-left: 10px;
+margin-top: 15px;
+font-weight: 700;
+font-size: 19px;
+cursor: pointer;
+
+}
+.menu-icon {
+  margin-left:10px ;
+  margin-top: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.search-panel {
+
+display: flex;
+margin-left: 90px;
+height: 30px;
+margin-top: 10px;
+
+}
+
+.search-icon {
+  margin-top: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+.search-panel:hover {
+  border: 4px solid rgb(0, 116, 27);
+}
+
+.acc {
+  margin-left: 60px;
+  margin-top: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+}
+
+.about-us {
+  margin-left: 100px;
+  margin-top:15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.backimg {
+  background-color: rgb(94, 91, 91);
+  height: 700px;
+  background-size: cover;
+}
+.hero-section {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.box {
+  height: 300px;
+  border-bottom: 2px solid brown;
+}
+
+.one {
+  text-align: center;
+  background-size: cover;
+  height: 300px;
+  width: 25%;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  
+}
+.one p {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: px;
+}
+
+.one a {
+  color: rgb(97, 172, 82);
+  text-decoration: underline;
+  cursor: pointer;
+  
+  
+}
+.one p {
+  margin-left: 10px;
+}
+
+    @keyframes rainbow {
+      0% { color: rgb(98, 141, 5); }
+      16.666% { color: rgb(206, 160, 76); }
+      33.333% { color: rgb(89, 174, 223); }
+      50% { color: rgb(134, 172, 134); }
+      66.666% { color: rgb(71, 189, 160); }
+      83.333% { color: rgb(238, 58, 172); }
+      100% { color: rgb(94, 81, 94); }
+      0% { color: rgb(213, 83, 83); }
+    }
+    
+    /* Apply rainbow animation to h2 element */
+    h2 {
+      animation: rainbow 10s linear infinite;
+}
+.bac-img {
+  background-size: cover;
+  cursor: pointer;
+  height: 200px;
+  margin-top: 10px;
+  
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.made {
+  background-color: rgb(236, 215, 255);
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+.trust {
+  background-color: rgb(236, 215, 255);
+  color: rgb(255, 0, 0);
+  text-align: center;
+}

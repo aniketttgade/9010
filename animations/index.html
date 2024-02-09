@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Register Here</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+           <button type="submit">Create A New Account</button>
+        </form>
+    </div>
+    <div class="alredy">
+    </div>
+    <script src="login.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+                        // Save username and password to local storage
+                        localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+
+            // Redirect to another page or perform any other action after login
+            // For example, you can redirect to a dashboard page:
+            window.location.href = "coverpage.html";
+
+            const authenticatedUser = authenticate(username, password);
+            if (authenticatedUser) {
+                
+                window.location.href = 'coverpage.html'; // Redirect to coverme.html
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
